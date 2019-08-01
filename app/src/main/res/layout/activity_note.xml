@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent"
+    tools:context="com.example.chris.coldturkey.ui.NoteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+
+        android:layout_centerHorizontal="true">
+
+
+        <EditText
+
+            android:layout_margin="8dp"
+            android:id="@+id/note"
+            android:padding="16dp"
+            android:inputType="textEmailAddress"
+            android:textColor="#000000"
+            android:hint="Enter Date and Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:padding="16dp"
+
+            android:layout_margin="8dp"
+            android:id="@+id/time"
+            android:textColor="#000000"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:hint="Enter Note"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/Save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="SAVE"
+            android:textColor="#fff"
+            android:onClick="saving"
+            android:layout_gravity="center"/>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
